@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Ini adalah bagian untuk menampilkan catatan agar bisa digulir -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_item"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="4dp"
+    android:background="#e0e0e0"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="#ffc1e3">
+
+        <!-- Ini adalah bagian teks yang ditambahkan pada projek DailyNotes
+             - Mempunyai id berupa text_view_title
+             - Untuk menampilkan keluaran berupa Judul Catatan
+             - Mempunyai ukuran teks sebesar 24sp dan dibold
+        -->
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Judul Catatan"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Ini adalah bagian teks yang ditambahkan pada projek DailyNotes
+            - Mempunyai id berupa text_view_body
+            - Untuk menampilkan keluaran berupa teks yang dikelompokkan berdasarkan string
+       -->
+        <TextView
+            android:id="@+id/text_view_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:text="@string/lorem" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
